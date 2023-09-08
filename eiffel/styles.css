@@ -53,3 +53,5 @@ img{
     width: 350px;
     text-align: left;
 }
+
+#right-column h2 {font-size: 1.2rem; font-weight: bold;}
