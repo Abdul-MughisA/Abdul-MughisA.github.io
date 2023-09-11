@@ -23,7 +23,11 @@
 <br>
 Answer: <input id="box3" type:="text" name="answer">
 <script>
-	function validate() {
+	function write(){
+		document.write('Goodbye, world!'');
+	}
+
+	function validate(){
 		var x = document.getElementById('box3').value;
 		if (x == ""){
 			document.getElementById('box').style.color="red";
@@ -43,6 +47,7 @@ Answer: <input id="box3" type:="text" name="answer">
 </script>
 <br>
 <button type="button" onclick="validate()">Show answer</button><br><br>
-<button type="button" onclick="showHide()">Show/hide the monster</button>
+<button type="button" onclick="showHide()">Show/hide the monster</button><br><br>
+<button type="button" onclick="write()">End</button>
 </body>
 </html>
