@@ -13,7 +13,7 @@
             Have fun!
 
             <!--QUESTION 1-->
-            <h2>Question 1</h2>
+            <h2 id="QQ1">Question 1</h2>
             <h3>How many service pack updates did Windows XP receive?</h3>
             <form>
                 <div id="radio1">
@@ -29,7 +29,7 @@
             </form>
 
             <!--QUESTION 2-->
-            <h2>Question 2</h2>
+            <h2 id="QQ2">Question 2</h2>
             <h3>In which country was Satya Nadella born?</h3>
             <form>        
                 <div>
@@ -46,21 +46,21 @@
 
 
             <!--QUESTION 3-->
-            <h2>Question 3</h2>
+            <h2 id="QQ3">Question 3</h2>
             <h3>What does HTML stand for?</h3>
             <form>
                 <input id="input1" name="HTML" value="Enter your answer...">
             </form>
             
             <!--QUESTION 4-->
-            <h2>Question 4</h2>
+            <h2 id="QQ4">Question 4</h2>
             <h3>Name a common Afro-Asiatic language.</h3>
             <form>
                 <input id="input2" name="lang1" value="Enter your answer...">
             </form>
 
             <!--QUESTION 5-->
-            <h2>Question 5</h2>
+            <h2 id="QQ5">Question 5</h2>
             <h3>What is the other most widely spoken language in Türkiye apart from Türkçe (Turkish)?</h3>
             <form>
                 <div id="radio2">
@@ -76,7 +76,7 @@
             </form>
             
             <!--QUESTION 6-->
-            <h2>Question 6</h2>
+            <h2 id="QQ6">Question 6</h2>
             <h3>What is the diameter of a common phone connector (sometimes referred to as an audio jack)?</h3>
             <form>
                 <div id="radio3">
@@ -92,14 +92,14 @@
             </form>
             
             <!--QUESTION 7-->
-            <h2>Question 7</h2>
+            <h2 id="QQ7">Question 7</h2>
             <h3>Write the sentence “seriously what do you think youre doing” with correct punctuation and grammar.</h3>
             <form>
                 <input id="input3" name="grammar" value="Enter your answer here...">
             </form>
 
             <!--QUESTION 8-->
-            <h2>Question 8</h2>
+            <h2 id="QQ8">Question 8</h2>
             <h3>What is the name of Malay's Arabic-derived script?</h3>
             <form>
                 <div id="radio4">
@@ -125,60 +125,77 @@
 
             // CHECK QUESTION 1 //
             var q1 = document.getElementById("q1").checked;
+            document.getElementById("QQ1").style.color="red";
             if (q1 == true){
                 total = total + 1
+                document.getElementById("QQ1").style.color="darkgreen";
             }
 
             // CHECK QUESTION 2 //
             var q2 = document.getElementById("drop1").selectedIndex;
+            document.getElementById("QQ2").style.color="red";
             if (q2 == 2){
                 total = total + 1
+                document.getElementById("QQ2").style.color="darkgreen";
             }
 
             // CHECK QUESTION 3 //
             var q3 = document.getElementById("input1").value;
+            document.getElementById("QQ3").style.color="red";
             if (q3 == "Hypertext Markup Language"){
                 total = total + 1
+                document.getElementById("QQ3").style.color="darkgreen";
             }
             if (q3 == "hypertext markup language"){
                 total = total + 1
+                document.getElementById("QQ3").style.color="darkgreen";
             }
 
             // CHECK QUESTION 4 //
             var q4 = document.getElementById("input2").value;
+            document.getElementById("QQ4").style.color="red";
             if (q4 == "Arabic"){
                 total = total + 1
+                document.getElementById("QQ4").style.color="darkgreen";
             }
             if (q4 == "arabic"){
                 total = total + 1
+                document.getElementById("QQ4").style.color="darkgreen";
             }
 
             // CHECK QUESTION 5 //
             var q5 = document.getElementById("q5").checked;
+            document.getElementById("QQ5").style.color="red";
             if (q5 == true){
                 total = total + 1
+                document.getElementById("QQ5").style.color="darkgreen";
             }
 
             // CHECK QUESTION 6 //
             var q6 = document.getElementById("q6").checked;
+            document.getElementById("QQ6").style.color="red";
             if (q6 == true){
                 total = total + 1
+                document.getElementById("QQ6").style.color="darkgreen";
             }
 
             // CHECK QUESTION 7 //
             var q7 = document.getElementById("input3").value;
+            document.getElementById("QQ7").style.color="red";
             if (q7 == "Seriously, what do you think you're doing?"){
                 total = total + 1
+                document.getElementById("QQ7").style.color="darkgreen";
             }
 
             // CHECK QUESTION 8 //
             var q8 = document.getElementById("q8").checked;
+            document.getElementById("QQ8").style.color="red";
             if (q8 == true){
                 total = total + 1
+                document.getElementById("QQ8").style.color="darkgreen";
             }
 
-            document.getElementById("answers-area").innerHTML = "WHAT ARE YOU ON ABOUT?" + total
-            alert(total)
+            document.getElementById("answers-area").innerHTML = "<h4>VERY WELL DONE!</h4><br>You scored:<br>" + total
         }
     </script>
 </html>
