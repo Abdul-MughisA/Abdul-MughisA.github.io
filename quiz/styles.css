@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+#page{
+    background-color: #bbc3e3;
+    margin: 50px;
+    padding: 70px;
+}
+
+h1{
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: #859dff;
+    margin-bottom: 10px;
+    
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    background-color: lightskyblue;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+h3{
+    text-align: center;
+    background-color: #d1daff;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+#navigation{
+    float: left;
+    text-align: left;
+}
+
+#facts{
+    float: right;
+    text-align: left;
+}
+
+#socials{
+    text-align: center;
+}
+
+#footer{
+    font-size: 12px;
+    color: grey;
+    margin: 10px;
+}
+
+#green-text{
+    color: green;
+    font-weight: bold;
+}
+
+#red-text{
+    color: red;
+    font-weight: bold;
+}
+
+#drop1{
+    font-size: large;
+    width: 100%;
+}
+
+#radio1{
+    font-size: large;
+    background-color: #aeb7df;
+    border-radius: 2px;
+    border-color: black;
+    padding: 15px;
+    margin: 0px;
+}
+
+input[type="radio"]{
+    transform: scale(1.2);
+}
+
+#input1{
+    width: 100%;
+    font-size: large;
+
+}#input2{
+    width: 100%;
+    font-size: large;
+}
+
+#input3{
+    width: 100%;
+    font-size: large;
+}
+
+#radio2{
+    font-size: large;
+    background-color: #aeb7df;
+    border-radius: 2px;
+    border-color: black;
+    padding: 15px;
+    margin: 0px;
+
+}#radio3{
+    font-size: large;
+    background-color: #aeb7df;
+    border-radius: 2px;
+    border-color: black;
+    padding: 15px;
+    margin: 0px;
+}
+
+#radio4{
+    font-size: large;
+    background-color: #aeb7df;
+    border-radius: 2px;
+    border-color: black;
+    padding: 15px;
+    margin: 0px;
+}
+
+#check-button{
+    font-size: xx-large;
+    font-weight: 900;
+    width: 100%;
+    color: green;
+}
+
+#answers-area{
+    text-align: center;
+    font-weight: bold;
+}
