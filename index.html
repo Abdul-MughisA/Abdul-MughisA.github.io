@@ -43,8 +43,8 @@
       <b><a href="https://open.spotify.com/user/iijp8op01h90juop42rny5sf2?si=52856cc945ca4078">Spotify</a></b><br><br>
       <a href="mailto:ayaanamughis@outlook.com">Personal Email</a><br><br>
       <a href="mailto:Abdul-MughisA@dulwich.org.uk">School Email</a><br>
-      <button></button>
-
+      <button onclick="mistake()"></button><br><br>
+      <div id="mistake"></div>
     </div>
     </div>
 
@@ -58,4 +58,10 @@
       Separate quiz page which reveals questions about me.-->
   
     </body>
+
+    <script>
+      function mistake() {
+        document.getElementById("mistake").innerHTML = "Well done! You found the mistake in my website."
+      }
+    </script>
 </HTML>
